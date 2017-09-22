@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Catamaran');
+@import url('https://fonts.googleapis.com/css?family=Lato:400i');
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+body {
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-height: 100vh;
+  background: -moz-linear-gradient(top, #007ea7 0%, #00a8e8 100%);
+  background: -webkit-gradient(
+    left top,
+    left bottom,
+    color-stop(0%, #007ea7),
+    color-stop(100%, #00a8e8)
+  );
+  background: -webkit-linear-gradient(top, #007ea7 0%, #00a8e8 100%);
+  background: -o-linear-gradient(top, #007ea7 0%, #00a8e8 100%);
+  background: -ms-linear-gradient(top, #007ea7 0%, #00a8e8 100%);
+  background: linear-gradient(to bottom, #007ea7 0%, #00a77d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(
+      startColorstr="#007ea7",
+      endColorstr="#00a8e8",
+      GradientType=0
+    );
+  background-size: 100% 100%;
+}
+
+nav {
+  margin: 0 auto;
+  color: #003459;
+  background: transparent;
+  font-family: "Catamaran", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px solid #007ea7;
+  height: 85px;
+}
+
+li a {
+  text-decoration: none;
+  align-self: center;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 25px 20px;
+  color: #e8e8e8;
+}
+
+li a:hover {
+  color: #003459;
+}
+
+.home-link {
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "Unica One", cursive;
+  color: #7da700;
+  margin-right: 20px;
+}
