@@ -3,12 +3,12 @@ import Link from "gatsby-link";
 
 import "./projects.css";
 
-import euros from "../images/euro-fixtures.png";
-import tracklistah from "../images/tracklistah.png";
-import crimean from "../images/crimean-war.png";
-import earthquake from "../images/earthquake.png";
-import pomodoro from "../images/pomodoro.png";
-import blv from "../images/blv.png";
+import euros from "../images/euro-fixtures.jpg";
+import tracklistah from "../images/tracklistah.jpg";
+import crimean from "../images/crimean-war.jpg";
+import earthquake from "../images/earthquake.jpg";
+import pomodoro from "../images/pomodoro.jpg";
+import blv from "../images/blv.jpg";
 
 const Card = ({ image, title, description, webLink, githubLink }) => (
   <div className="project-card-container">
