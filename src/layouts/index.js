@@ -8,7 +8,7 @@ import "../style/font-awesome/css/font-awesome.css";
 
 const Header = () => (
   <nav>
-    <ul>
+    <ul className="nav-links">
       <li>
         <Link to="/" className="home-link">
           Oliver Bullen /

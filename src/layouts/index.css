@@ -48,7 +48,6 @@ ul {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  border-bottom: 2px solid #007ea7;
 }
 
 li a {
@@ -64,6 +63,10 @@ li a {
 
 li a:hover {
   color: #003459;
+}
+
+.nav-links {
+  height: 150px;
 }
 
 .home-link {
