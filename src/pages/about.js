@@ -25,7 +25,7 @@ const AboutPage = () => (
       <p>I'm a Front End Developer from the UK.</p>
       <p>
         I've been developing and learning for around 2 years. I love creating
-        modern, responsive website and applications keeping up wth the latest
+        modern, responsive websites and applications keeping up wth the latest
         trends. I have recently returned from living in Japan and am looking for
         my first professional development position.
       </p>

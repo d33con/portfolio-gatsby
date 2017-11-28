@@ -5,28 +5,24 @@
   text-align: left;
 }
 
-.skills-container {
-  margin: 20px 0;
-}
-
 .skills-title {
   font-family: "Lato", sans-serif;
   font-size: 32px;
   background: rgba(0, 167, 125, 0.75);
   width: 33%;
-  padding: 20px 40px;
+  padding: 20px 60px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 .skills-list {
   font-size: 24px;
-  margin: 20px;
+  margin: 20px 40px;
   border: none;
   display: block;
 }
 
 .bio {
   margin: 20px;
-  padding: 20px 40px;
+  padding: 20px 60px;
 }
