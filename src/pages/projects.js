@@ -9,6 +9,7 @@ import crimean from "../images/crimean-war.jpg";
 import earthquake from "../images/earthquake.jpg";
 import pomodoro from "../images/pomodoro.jpg";
 import blv from "../images/blv.jpg";
+import d3 from "../images/d3-vis.jpg";
 
 const Card = ({ image, title, description, webLink, githubLink }) => (
   <div className="project-card-container">
@@ -74,6 +75,13 @@ const ProjectsPage = () => (
       title="Buscate La Vida"
       description="UK placement company site built with Bootstrap"
       webLink="https://www.buscatelavida.co.uk"
+      githubLink=""
+    />
+    <Card
+      image={d3}
+      title="D3 Visualisations"
+      description="Collection of data visualisations built with D3.js"
+      webLink="https://codepen.io/collection/nWxkKw/"
       githubLink=""
     />
   </div>
