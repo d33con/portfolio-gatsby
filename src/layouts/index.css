@@ -5,17 +5,20 @@
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: inherit;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
 
-body {
-  margin: 0 auto;
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  height: 100%;
   background: -moz-linear-gradient(top, #007ea7 0%, #00a8e8 100%);
   background: -webkit-gradient(
     left top,
@@ -32,7 +35,11 @@ body {
       endColorstr="#00a8e8",
       GradientType=0
     );
-  background-size: 100% 100%;
+  background-size: 100% auto;
+}
+
+.container {
+  height: 100%;
 }
 
 nav {
@@ -75,4 +82,12 @@ li a:hover {
   font-family: "Unica One", cursive;
   color: #7da700;
   margin-right: 20px;
+}
+
+footer {
+  text-align: right;
+  color: #e8e8e8;
+  padding: 10px;
+  font-family: "Catamaran", sans-serif;
+  font-size: 18px;
 }
