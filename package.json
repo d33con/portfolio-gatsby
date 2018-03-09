@@ -5,8 +5,9 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.42",
-    "gatsby-link": "^1.6.15",
-    "gatsby-plugin-react-helmet": "^1.0.5"
+    "gatsby-link": "^1.6.36",
+    "gatsby-plugin-react-helmet": "^1.0.8",
+    "graphql": "^0.13.0"
   },
   "keywords": [
     "gatsby"
