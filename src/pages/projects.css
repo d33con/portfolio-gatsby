@@ -3,61 +3,55 @@
   padding: 30px 0;
   font-family: "Catamaran", sans-serif;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fill, 400px);
+  grid-auto-rows: 400px;
   grid-gap: 20px;
 }
 
-.project-card-container {
-  height: 450px;
-  margin: 10px auto 100px auto;
-  position: relative;
-  width: 450px;
-}
-
 .card {
-  height: 100%;
-  margin-bottom: 15px;
-  position: absolute;
-  width: 100%;
+  display: grid;
+  overflow: hidden;
+  grid-column: span 1;
 }
 
-.card .side {
-  height: 100%;
-  position: absolute;
-  width: 100%;
-}
-
-.card-caption {
+.card__overlay {
+  position: relative;
+  display: grid;
+  grid-column: 1 / -1;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  justify-items: center;
+  align-items: center;
   color: #003459;
   text-align: center;
   font-size: 18px;
   padding: 15px 0;
-  background: rgba(0, 167, 125, 0.75);
+  background: rgba(0, 167, 125, 0.9);
+  transition: transform 0.3s;
+  transform: translateY(100%);
 }
 
-.card-caption a {
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__overlay a {
   text-decoration: none;
   color: #e8e8e8;
   opacity: 1;
   transition: opacity 0.3s;
 }
 
-.card-caption a:hover {
+.card__overlay a:hover {
   opacity: 0.9;
 }
 
 .project-img {
-  background: white;
-  padding: 2px;
-  max-height: 450px;
-  max-width: 450px;
-  transition: opacity 0.3s;
-  opacity: 0.9;
-  border: 1px solid #007ea7;
-}
-
-.project-img:hover {
-  opacity: 1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
 
 .title {

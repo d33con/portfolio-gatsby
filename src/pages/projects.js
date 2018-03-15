@@ -12,43 +12,17 @@ import blv from "../images/blv.jpg";
 import d3 from "../images/d3-vis.jpg";
 
 const Card = ({ image, title, description, webLink, githubLink }) => (
-  <div className="project-card-container">
-    <div className="card">
-      <div className="side">
-        <a href={webLink}>
-          <img src={image} className="project-img" />
-        </a>
-        <div className="card-caption">
-          <div className="title">{title}</div>
-          <div className="description">{description}</div>
-          <div>
-            <a href={webLink}>Visit</a>
-          </div>
-          <div>
-            <a href={githubLink}>Source Code</a>
-          </div>
-        </div>
+  <div className="card">
+    <img src={image} className="project-img" />
+    <div className="card__overlay">
+      <div className="title">{title}</div>
+      <div className="description">{description}</div>
+      <div>
+        <a href={webLink}>Visit</a>
       </div>
-    </div>
-  </div>
-);
-
-const CardReveal = ({ image, title, description, webLink, githubLink }) => (
-  <div className="project-card-container">
-    <div className="frame">
-      <a href={webLink}>
-        <span className="caption">
-          <h2>{title}</h2>
-          <p className="description">{description}</p>
-          <div>
-            <a href={webLink}>Visit</a>
-          </div>
-          <div>
-            <a href={githubLink}>Source Code</a>
-          </div>
-        </span>
-        <img src={image} />
-      </a>
+      <div>
+        <a href={githubLink}>Source Code</a>
+      </div>
     </div>
   </div>
 );
@@ -103,13 +77,6 @@ const ProjectsPage = () => (
       description="Collection of data visualisations built with D3.js"
       webLink="https://codepen.io/collection/nWxkKw/"
       githubLink=""
-    />
-    <Card
-      image={pomodoro}
-      title="Pomodoro Timer"
-      description="Built with React"
-      webLink="https://d33con.github.io/react-pomodoro-timer/"
-      githubLink="https://github.com/d33con/react-pomodoro-timer"
     />
   </div>
 );
