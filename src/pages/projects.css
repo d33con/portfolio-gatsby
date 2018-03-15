@@ -18,8 +18,8 @@
   position: relative;
   display: grid;
   grid-column: 1 / -1;
-  grid-row-start: 1;
-  grid-row-end: -1;
+  /* autoprefixer: off */
+  grid-row: 1 / -1;
   justify-items: center;
   align-items: center;
   color: #003459;
@@ -51,6 +51,7 @@
   width: 100%;
   object-fit: cover;
   grid-column: 1 / -1;
+  /* autoprefixer: off */
   grid-row: 1 / -1;
 }
 
