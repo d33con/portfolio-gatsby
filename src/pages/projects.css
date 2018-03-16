@@ -1,6 +1,5 @@
 .projects-wrapper {
-  margin: 30px 30px 60px;
-  padding: 30px 0;
+  margin: 30px;
   font-family: "Catamaran", sans-serif;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
@@ -11,24 +10,20 @@
 .card {
   display: grid;
   overflow: hidden;
-  grid-column: span 1;
 }
 
 .card__overlay {
-  position: relative;
   display: grid;
   grid-column: 1 / -1;
   /* autoprefixer: off */
   grid-row: 1 / -1;
-  justify-items: center;
-  align-items: center;
   color: #003459;
   text-align: center;
   font-size: 18px;
   padding: 15px 0;
   background: rgba(0, 167, 125, 0.9);
   transition: transform 0.3s;
-  transform: translateY(100%) translateX(100%);
+  transform: translateY(100%) translateX(-100%);
 }
 
 .card:hover .card__overlay {
