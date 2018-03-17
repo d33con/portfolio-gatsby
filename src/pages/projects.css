@@ -17,13 +17,16 @@
   grid-column: 1 / -1;
   /* autoprefixer: off */
   grid-row: 1 / -1;
+  justify-items: center;
+  align-items: center;
   color: #003459;
   text-align: center;
   font-size: 18px;
   padding: 15px 0;
-  background: rgba(0, 167, 125, 0.9);
+  background: rgb(0, 167, 125, 0.9);
   transition: transform 0.3s;
   transform: translateY(100%) translateX(-100%);
+  border: 2px solid #003459;
 }
 
 .card:hover .card__overlay {
@@ -57,4 +60,18 @@
 
 .description {
   font-size: 18px;
+}
+
+.webLink a {
+  border: 2px solid #003459;
+  border-radius: 4px;
+  color: #e8e8e8;
+  padding: 8px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.webLink a:hover {
+  color: #003459;
 }
