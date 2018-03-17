@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import Button from "../common/Button";
 
 import "./projects.css";
 
@@ -17,8 +18,9 @@ const Card = ({ image, title, description, webLink, githubLink }) => (
     <div className="card__overlay">
       <div className="title">{title}</div>
       <div className="description">{description}</div>
-      <div>
+      <div className="webLink">
         <a href={webLink}>Visit</a>
+        <Button />
       </div>
       <div>
         <a href={githubLink}>Source Code</a>
