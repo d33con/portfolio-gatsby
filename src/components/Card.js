@@ -9,13 +9,8 @@ const Card = ({ image, title, description, webLink, githubLink }) => (
     <div className="card__overlay">
       <div className="title">{title}</div>
       <div className="description">{description}</div>
-      <div className="webLink">
-        <a href={webLink}>Visit</a>
-        <Button />
-      </div>
-      <div>
-        <a href={githubLink}>Source Code</a>
-      </div>
+      <Button link={webLink} text="Visit" />
+      <Button link={githubLink} text="Source Code" />
     </div>
   </div>
 );
