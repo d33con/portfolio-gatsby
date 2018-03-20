@@ -1,7 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
-
-import "./index-page.css";
 
 const IndexPage = () => (
   <div className="main-body">

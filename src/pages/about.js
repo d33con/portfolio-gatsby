@@ -1,7 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
-
-import "./about.css";
 
 const AboutPage = () => (
   <div className="about-page">

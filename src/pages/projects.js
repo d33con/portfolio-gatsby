@@ -1,8 +1,6 @@
 import React from "react";
-import Link from "gatsby-link";
-import Button from "../common/Button";
 
-import "./projects.css";
+import Card from "../components/Card";
 
 import euros from "../images/euro-fixtures.jpg";
 import tracklistah from "../images/tracklistah.jpg";
@@ -11,23 +9,6 @@ import earthquake from "../images/earthquake.jpg";
 import pomodoro from "../images/pomodoro.jpg";
 import blv from "../images/blv.jpg";
 import d3 from "../images/d3-vis.jpg";
-
-const Card = ({ image, title, description, webLink, githubLink }) => (
-  <div className="card">
-    <img src={image} className="project-img" />
-    <div className="card__overlay">
-      <div className="title">{title}</div>
-      <div className="description">{description}</div>
-      <div className="webLink">
-        <a href={webLink}>Visit</a>
-        <Button />
-      </div>
-      <div>
-        <a href={githubLink}>Source Code</a>
-      </div>
-    </div>
-  </div>
-);
 
 const ProjectsPage = () => (
   <div className="projects-wrapper">
