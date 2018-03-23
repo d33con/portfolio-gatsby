@@ -14,13 +14,6 @@ import portfolio from "../images/portfolio.png";
 const ProjectsPage = () => (
   <div className="projects-wrapper">
     <Card
-      image={euros}
-      title="Euro 2016 team & player cards"
-      description="CSS & jQuery"
-      webLink="https://codepen.io/d33con/full/xOwQmN/"
-      githubLink="https://github.com/d33con/euro-2016-team-player-cards"
-    />
-    <Card
       image={tracklistah}
       title="Tracklistah"
       description="Mix tracklisting app built with React"
@@ -42,11 +35,11 @@ const ProjectsPage = () => (
       githubLink="https://github.com/d33con/2016-Kumamoto-Earthquake"
     />
     <Card
-      image={pomodoro}
-      title="Pomodoro Timer"
-      description="Built with React"
-      webLink="https://d33con.github.io/react-pomodoro-timer/"
-      githubLink="https://github.com/d33con/react-pomodoro-timer"
+      image={euros}
+      title="Euro 2016 team & player cards"
+      description="CSS & jQuery"
+      webLink="https://codepen.io/d33con/full/xOwQmN/"
+      githubLink="https://github.com/d33con/euro-2016-team-player-cards"
     />
     <Card
       image={blv}
@@ -61,6 +54,13 @@ const ProjectsPage = () => (
       description="Collection of data visualisations built with D3.js"
       webLink="https://codepen.io/collection/nWxkKw/"
       githubLink=""
+    />
+    <Card
+      image={pomodoro}
+      title="Pomodoro Timer"
+      description="Built with React"
+      webLink="https://d33con.github.io/react-pomodoro-timer/"
+      githubLink="https://github.com/d33con/react-pomodoro-timer"
     />
     <Card
       image={portfolio}
