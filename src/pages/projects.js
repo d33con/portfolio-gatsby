@@ -9,13 +9,14 @@ import earthquake from "../images/earthquake.jpg";
 import pomodoro from "../images/pomodoro.jpg";
 import blv from "../images/blv.jpg";
 import d3 from "../images/d3-vis.jpg";
+import portfolio from "../images/portfolio.png";
 
 const ProjectsPage = () => (
   <div className="projects-wrapper">
     <Card
       image={euros}
       title="Euro 2016 team & player cards"
-      description=""
+      description="CSS & jQuery"
       webLink="https://codepen.io/d33con/full/xOwQmN/"
       githubLink="https://github.com/d33con/euro-2016-team-player-cards"
     />
@@ -60,6 +61,13 @@ const ProjectsPage = () => (
       description="Collection of data visualisations built with D3.js"
       webLink="https://codepen.io/collection/nWxkKw/"
       githubLink=""
+    />
+    <Card
+      image={portfolio}
+      title="Portfolio site"
+      description="This site is built using Gatsbyjs - a static site generator for React"
+      webLink="#"
+      githubLink="https://github.com/d33con/portfolio-gatsby"
     />
   </div>
 );
